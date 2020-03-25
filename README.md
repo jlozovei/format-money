@@ -48,16 +48,23 @@ const formatMoney = require('@jlozovei/format-money');
 Then, you'll be able to use it:
 
 ```js
-import formatMoney from '@jlozovei/format-money';
+const localized = formatMoney('123456789'); // "$123,456,789.00"
 
-const localized = formatMoney('123456789');
+// or
+
+const localized = formatMoney({
+  value: '123456789',
+  currencyCode: 'EUR',
+  locale: 'DE'
+}); // "123.456.789,00 €"
 ```
 
 ### Avaliable Options
-| Name       | Type   | Description         |
-| ---------- | ------ | ------------------- |
-| `locale`   | string | The output language |
-| `currency` | string | The currency code   |
+| Name           | Type           | Description         | Example |
+| -------------- | -------------- | ------------------- | ------- |
+| `value`        | string, number | The output language | `123`   |
+| `locale`       | string         | The output language | `pt-BR` |
+| `currencyCode` | string         | The currency code   | `USD`   |
 
 
 ## :computer: Developing
@@ -66,7 +73,7 @@ First, fork the project. After it, install the dependencies (preferably using [y
 Also, take a look at the [contributing guide](https://github.com/jlozovei/format-money/blob/master/.github/CONTRIBUTING.md)!
 
 
-## :thinking_face: I want to use it, but I don't want to install it
+## :thinking: I want to use it, but I don't want to install it
 Cool! So, the magic under the hood is basically using the [`number.toLocaleString()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toLocaleString) method, passing some cool parameters to create the formatted currency string:
 
 ```js
