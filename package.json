@@ -7,7 +7,7 @@
     "build": "rollup -c",
     "format": "prettier \"{./,tests}/*.js\" --write",
     "test:dev": "NODE_ICU_DATA=node_modules/full-icu jest",
-    "test": "NODE_ICU_DATA=node_modules/full-icu jest",
+    "test": "NODE_ICU_DATA=node_modules/full-icu jest --coverage --watchAll=false",
     "posttest": "yarn jest-coverage-badges && yarn make-coverage-badge",
     "semantic-release": "semantic-release"
   },
