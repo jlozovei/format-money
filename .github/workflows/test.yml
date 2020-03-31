@@ -18,3 +18,11 @@ jobs:
         run: npm install
       - name: Test code
         run: npm test
+      - name: Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          flags: unittests
+          name: codecov-umbrella
+          fail_ci_if_error: true
+

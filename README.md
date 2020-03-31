@@ -1,15 +1,8 @@
-# @jlozovei/format-money :money_with_wings:
-The coolest money formatting helper for JavaScript! :rocket:
+# @jlozovei/format-money
+The coolest money formatting helper for JavaScript! :money_with_wings:
 
----
-
-![Coverage](https://raw.githubusercontent.com/jlozovei/format-money/master/coverage/badge.svg?sanitize=true "Coverage")
-![Coverage Branches](https://raw.githubusercontent.com/jlozovei/format-money/master/coverage/badge-branches.svg?sanitize=true "Coverage Branches")
-![Coverage Functions](https://raw.githubusercontent.com/jlozovei/format-money/master/coverage/badge-functions.svg?sanitize=true "Coverage Functions")
-![Coverage Lines](https://raw.githubusercontent.com/jlozovei/format-money/master/coverage/badge-lines.svg?sanitize=true "Coverage Lines")
-![Coverage Statements](https://raw.githubusercontent.com/jlozovei/format-money/master/coverage/badge-statements.svg?sanitize=true "Coverage Statements")
-
----
+[![codecov](https://codecov.io/gh/jlozovei/format-money/branch/master/graph/badge.svg)](https://codecov.io/gh/jlozovei/format-money)
+![Release](https://github.com/jlozovei/format-money/workflows/Release/badge.svg?branch=master)
 
 
 ## :scroll: About
@@ -68,7 +61,7 @@ const localized = formatMoney({
 
 
 ## :computer: Developing
-First, fork the project. After it, install the dependencies (preferably using [yarn](https://yarnpkg.com/) - since the project is using it) and do the work.
+First, fork the project. After it, install the dependencies (preferably using [npm](https://www.npmjs.com/) - since the project is using it) and do the work.
 
 Also, take a look at the [contributing guide](https://github.com/jlozovei/format-money/blob/master/.github/CONTRIBUTING.md)!
 
@@ -103,4 +96,4 @@ number.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); // "R$ 1
 
 
 ## :closed_lock_with_key: License
-Licensed under the [MIT]().
+Licensed under the [MIT](https://github.com/jlozovei/format-money/blob/master/LICENSE).
