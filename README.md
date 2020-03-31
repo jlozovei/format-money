@@ -1,5 +1,5 @@
-# @jlozovei/format-money :money_with_wings:
-The coolest money formatting helper for JavaScript! :rocket:
+# @jlozovei/format-money
+The coolest money formatting helper for JavaScript! :money_with_wings:
 
 [![codecov](https://codecov.io/gh/jlozovei/format-money/branch/master/graph/badge.svg)](https://codecov.io/gh/jlozovei/format-money)
 ![Release](https://github.com/jlozovei/format-money/workflows/Release/badge.svg?branch=master)
