@@ -17,7 +17,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Test code
-        run: npm test
+        run: npm run test
       - name: Codecov
         uses: codecov/codecov-action@v1
         with:
@@ -25,4 +25,3 @@ jobs:
           flags: unittests
           name: codecov-umbrella
           fail_ci_if_error: true
-
