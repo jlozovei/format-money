@@ -6,8 +6,8 @@
   "scripts": {
     "build": "rollup -c",
     "format": "prettier \"{./,tests}/*.js\" --write",
-    "test:dev": "NODE_ICU_DATA=node_modules/full-icu jest",
-    "test": "NODE_ICU_DATA=node_modules/full-icu jest --coverage --watchAll=false",
+    "test:dev": "cross-env NODE_ICU_DATA=node_modules/full-icu jest",
+    "test": "cross-env NODE_ICU_DATA=node_modules/full-icu jest --coverage --watchAll=false",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -29,6 +29,7 @@
     "format"
   ],
   "devDependencies": {
+    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-prettier": "^3.1.2",
